@@ -1,0 +1,83 @@
+.complaint {
+  padding-top: 10px;
+}
+
+.complaint .go-back-link {
+  padding-left: 50px;
+}
+.complaint .go-back-link a {
+  color: #677788;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.complaint .go-back-link a svg {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.complaint h2 {
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 36px;
+  color: #516377;
+  margin: 20px 0;
+}
+.complaint h2 span {
+  color: var(--green);
+}
+.complaint h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.complaint form label {
+  font-weight: 500;
+}
+.complaint form textarea,
+.complaint form select,
+.complaint form input:not([type="radio"]) {
+  border-radius: 15px;
+}
+.complaint form input:is([type="radio"]) {
+  padding: 0;
+}
+
+.complaint form select,
+.complaint form textarea,
+.complaint form input {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  border: 1px solid;
+  border-color: #b9b9b9;
+  padding: 10px;
+}
+.complaint form select:focus,
+.complaint form textarea:focus,
+.complaint form input:focus {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+  border-color: #b9b9b9;
+}
+
+.cmp-btn {
+  display: block;
+  margin: auto;
+  background: var(--green);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 6px;
+  width: 270px;
+  padding: 8px;
+  transition: 0.5s ease;
+}
+
+.cmp-btn:hover {
+  background-color: #00845a;
+}
+
+@media (max-width: 575px) {
+  .complaint h2 {
+    font-size: 26px;
+  }
+}
